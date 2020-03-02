@@ -1,0 +1,29 @@
+{
+    "name": "vagh/laravel-upyun",
+    "description": "A upyun SDK For Laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "VAGH",
+            "email": "yu@vagh.cn"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Vagh\\Laravel\\Upyun\\": "src/"
+        }
+    },
+    "require": {
+        "upyun/sdk": "^3.4",
+        "league/flysystem": "^1.0",
+        "laravel/framework" : ">=5.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Vagh\\Laravel\\Upyun\\UpyunServiceProvider"
+            ]
+        }
+    }
+}
